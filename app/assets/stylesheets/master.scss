@@ -1,12 +1,17 @@
 @import "bootstrap";
 
 .navbar {
-	box-shadow: 0px 1px 3px #8a4419;
-  margin-bottom: 0;
+	font-family: "Helvetica Neue", Helvetica;
+	font-weight: 200;
+	box-shadow: 0px 1px 3px #2a2a2a;
+	margin-bottom: 0;
+	background: image_url('grey_wash_wall.png')
 }
 
 .navbar-light .navbar-brand {
 	color: #271184;
-	font-family: sans-serif;
-	font-size: 50px;
+	font-family: 'chunkfiveroman', sans-serif;
+	font-weight: 100;
+	font-size: 40px;
+	color: #75E7DC;
 }
