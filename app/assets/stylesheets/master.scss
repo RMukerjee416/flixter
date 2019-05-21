@@ -1,1 +1,12 @@
 @import "bootstrap";
+
+.navbar {
+	box-shadow: 0px 1px 3px #8a4419;
+  margin-bottom: 0;
+}
+
+.navbar-light .navbar-brand {
+	color: #271184;
+	font-family: sans-serif;
+	font-size: 50px;
+}
