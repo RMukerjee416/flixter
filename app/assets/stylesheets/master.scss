@@ -1,5 +1,5 @@
 @import "bootstrap";
-@impirt "font-awesome";
+@import "font-awesome";
 
 body {
 	background: image_url('bg.png');
@@ -115,4 +115,8 @@ h1, h2, h3, h4, h5, h6, .navbar {
 .lesson a b {
 	font-weight: 100;
 	font-size: 25px;
+}
+
+ul {
+	list-style-type: none;
 }
