@@ -28,6 +28,9 @@
     </ul>
     <ul class="navbar-nav">
       <% if user_signed_in? %>
+      <li class="nav-item">
+        <%= link_to 'My Dashboard', dashboard_path, class: 'nav-link' %>
+      </li>
       <li class ="nav-item">
         <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
       </li>
@@ -39,19 +42,7 @@
         <%= link_to 'Sign Up', new_user_registration_path, class: 'nav-link' %>
       </li>
       <% end %>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">1st Link <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">2nd Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">3rd Link</a>
-      </li>
     </ul>
-    <span class="navbar-text">
-      Special link
-    </span>
   </div>
   </nav>
 
