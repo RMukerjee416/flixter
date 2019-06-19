@@ -24,7 +24,7 @@
 	<% end %>
 <% end %>
 
-<%if current_user.courses.present? %>
+<% if current_user.courses.present? %>
 	<h1><u>What I'm Teaching</u></h1>
 	<% current_user.courses.each do |course| %>
 		<h3 class="text-center">
@@ -45,6 +45,26 @@
 		<hr class="col-8 offset-2">
 		<br class="clr" />
 	<% end %>
+<% end %>
+
+<% if current_user.enrolled_courses.blank? && current_user.courses.blank? %>
+	<div class="text-center">
+		<h3><b>Please sign up for a course!</b></h3>
+		<br />
+		<%= link_to courses_path, class: 'btn btn-success btn-lg' do %> 
+		Start Here
+		<% end %>
+		<br />
+		<br />
+		<h2>OR...</h2>
+		<br />
+		<h3><b>Create a course as an instructor!</b><h3>
+		<br />
+		<%= link_to new_instructor_course_path, class: 'btn btn-outline-primary btn-lg' do %>
+		Create
+		<% end %>
+		<br />
+	</div>
 <% end %>
 
 </div>
