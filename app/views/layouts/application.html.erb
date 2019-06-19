@@ -59,9 +59,54 @@
 
   <div id="footer">
     <div class="container">
-      <b>Teachers</b>
-      <br />
-      <%= link_to 'Teach a Course', new_instructor_course_path %>
+      <div class="row">
+        <div class="col-12 col-sm-3">
+          <h6><b><u>Teachers</u></b></h6>
+          <br />
+          <%= link_to 'Teach a Course', new_instructor_course_path %>
+          <br />
+          <%= link_to 'My Dashboard', dashboard_path %>
+          <br class="clr" />
+          <br class="clr" />
+        </div>
+        <div class="col-12 col-sm-3">
+          <h6><b><u>About</u></b></h6>
+          <br />
+          <%= link_to 'Team', '#' %>
+          <br />
+          <%= link_to 'Careers', '#' %>
+          <br />
+          <%= link_to 'Privacy Policy', '#' %>
+          <br class="clr" />
+          <br class="clr" />
+        </div>
+        <div class="col-12 col-sm-3">
+          <h6><b><u>Contact</u></b></h6>
+          <br />
+          raj_muk@hotmail.com
+          <br />
+          One Test Ave.
+          <br />
+          Toronto, ON M1M 1M1
+          <br class="clr" />
+          <br class="clr" />
+        </div>
+        <div class="col-12 col-sm-3 social">
+          <h6><b><u>Social</u></b></h6>
+          <br />
+          <%= link_to 'https://github.com/RMukerjee416/' do %>
+            <span class="fa fa-github-square fa-2x social-button"></span>
+          <% end %>
+          <%= link_to '#' do %>
+            <span class="fa fa-facebook-square fa-2x social-button"></span>
+          <% end %>
+          <%= link_to '#' do %>
+            <span class="fa fa-twitter-square fa-2x social-button"></span>
+          <% end %>
+          <br class="clr" />
+          <br class="clr" />
+        </div>
+      </div>
     </div>
   </div>
 
