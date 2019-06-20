@@ -10,4 +10,8 @@ class Section < ApplicationRecord
 		return section
 	end
 
+	def previous_section
+		section = course.sections.where("row_order < ?", self.row_order).rank(:row_order).last
+		return section
+	end
 end
