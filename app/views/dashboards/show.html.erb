@@ -49,6 +49,7 @@
 
 <% if current_user.enrolled_courses.blank? && current_user.courses.blank? %>
 	<div class="text-center">
+		<br />
 		<h3><b>Please sign up for a course!</b></h3>
 		<br />
 		<%= link_to courses_path, class: 'btn btn-success btn-lg' do %> 
@@ -63,6 +64,7 @@
 		<%= link_to new_instructor_course_path, class: 'btn btn-outline-primary btn-lg' do %>
 		Create
 		<% end %>
+		<br />
 		<br />
 	</div>
 <% end %>
