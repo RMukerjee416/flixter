@@ -29,7 +29,7 @@
 	  <br />
 	  <%= link_to course_path(current_lesson.section.course), class: 'btn btn-outline-dark float-right' do %>
 	  <span class="fa fa-backward"></span>
-	  &nbsp; Return to course page
+	  &nbsp; Course Index
 	  <% end %>
 	 	<% if current_lesson.previous_lesson.present? %>
 			<%= link_to lesson_path(current_lesson.previous_lesson), class: 'btn btn-outline-dark float-left' do %>
