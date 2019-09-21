@@ -80,7 +80,7 @@ gem 'figaro'
 
 gem 'fog-aws'
 
-gem 'mini_magick'
+gem "mini_magick", ">= 4.9.4"
 
 gem 'carrierwave-aws'
 
